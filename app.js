@@ -2,14 +2,14 @@ require('dotenv').config();
 
 const {OpenAI} = require('openai');
 
-const openai = new OpenAIKey({
+const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 })
 
 async function fetchOpenAIResponse(prompt) {
     try {
         const response = await openai.chat.completions.create({
-            model: 'gpt-3.5-turbo',
+            model: 'gpt-4o-mini',
             messages: [{role: 'user', content: prompt}],
         });
         return response.choices[0].message.content;
