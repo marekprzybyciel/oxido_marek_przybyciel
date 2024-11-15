@@ -24,11 +24,11 @@ git clone https://github.com/your-repo-name.git
 Zainstaluj npm:
 npm install
 
-Skonfiguruj plik .env: Utwórz plik .env w katalogu głównym projektu i dodaj swój klucz API OpenAI:
+Skonfiguruj plik .env i dodaj swój klucz API OpenAI:
     OPENAI_API_KEY=api_key
 
-Uruchamianie projektu
+Uruchamianie projektu:
     Aby uruchomić przetwarzanie artykułu, wykonaj następujące polecenie:
-node index.js
+node app.js
 
 Po zakończeniu działania aplikacji, wygenerowany plik HTML będzie dostępny w katalogu projektu jako article.html.
